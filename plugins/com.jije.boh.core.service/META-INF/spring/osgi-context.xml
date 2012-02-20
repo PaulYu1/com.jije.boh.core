@@ -6,6 +6,6 @@
        http://www.springframework.org/schema/osgi  
        http://www.springframework.org/schema/osgi/spring-osgi.xsd">
 
-	<osgi:service interface="com.cloud.nvl.core.service.inter.IOperateService"
+	<osgi:service interface="com.jije.boh.core.service.inter.IOperateService"
 		ref="operateService" />
 </beans>

@@ -38,7 +38,7 @@
 	
 	<servlet>
 		<servlet-name>AnswerServlet</servlet-name>
-		<servlet-class>com.cloud.nvl.web.AnswerServlet</servlet-class>
+		<servlet-class>com.jije.boh.core.web.AnswerServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>

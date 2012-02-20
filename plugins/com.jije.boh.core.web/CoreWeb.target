@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde version="3.6"?>
 
-<target name="CoreWebTarget" sequenceNumber="185">
+<target name="CoreWebTarget" sequenceNumber="186">
 <locations>
 <location path="/home/murphy/localp2/20120215/bundlepool/plugins" type="Directory"/>
+<location path="/home/murphy/test/gemini/current/plugins" type="Directory"/>
 </locations>
 </target>

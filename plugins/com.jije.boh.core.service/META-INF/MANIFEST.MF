@@ -5,11 +5,12 @@ Bundle-SymbolicName: com.jije.boh.core.service
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: com.jije.boh.core.service.Activator
 Bundle-Vendor: CLOUD
-Bundle-Classpath: .
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Import-Package: org.osgi.framework;version="1.3.0",
- org.springframework.osgi.service.exporter.support;version="1.2.1",
+Bundle-ClassPath: .,target/classes
+Import-Package: com.jije.boh.core.service.inter,
+ org.osgi.framework;version="1.3.0",
+ org.springframework.beans.factory.annotation;version="3.0.5.RELEASE",
  org.springframework.stereotype;version="3.0.5.RELEASE"
 Bundle-ActivationPolicy: lazy
 Export-Package: com.jije.boh.core.service
-Require-Bundle: com.jije.boh.core.service.interface;bundle-version="1.0.0"
+Require-Bundle: org.springframework.web.servlet;bundle-version="3.0.5"

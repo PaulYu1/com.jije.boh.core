@@ -5,7 +5,8 @@ Bundle-SymbolicName: com.jije.boh.core.web
 Bundle-Version: 1.0.0.qualifier
 Export-Package: com.jije.boh.core.web,
  com.jije.boh.core.web.controller
-Import-Package: com.jije.boh.core.service.inter,
+Import-Package: com.jije.boh.core.service,
+ com.jije.boh.core.service.inter,
  javax.servlet,
  javax.servlet.http;version="3.0.0",
  org.eclipse.virgo.web.dm;version="3.0.2.RELEASE",
@@ -19,7 +20,7 @@ Import-Package: com.jije.boh.core.service.inter,
  org.springframework.web.servlet.view;version="3.0.5.RELEASE",
  org.springframework.web.servlet.view.freemarker;version="3.0.5.RELEASE"
 Web-ContextPath: /
-Bundle-ClassPath: .,WEB-INF/classes/
+Bundle-ClassPath: .,target/classes
 Require-Bundle: org.springframework.context;bundle-version="3.0.5",
  org.springframework.beans;bundle-version="3.0.5",
  org.springframework.context.support;bundle-version="3.0.5"
