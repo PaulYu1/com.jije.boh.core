@@ -3,12 +3,6 @@
 
 	<display-name>Spring Web App</display-name>
 
-	<context-param>
-		<param-name>contextClass</param-name>
-		<param-value>org.eclipse.virgo.web.dm.ServerOsgiBundleXmlWebApplicationContext
-		</param-value>
-	</context-param>
-
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener
 		</listener-class>
