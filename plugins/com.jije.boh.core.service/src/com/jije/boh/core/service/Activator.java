@@ -3,8 +3,6 @@ package com.jije.boh.core.service;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
-import com.jije.boh.core.service.inter.IOperateService;
-
 public class Activator implements BundleActivator {
 
 	private static BundleContext context;
@@ -19,7 +17,6 @@ public class Activator implements BundleActivator {
 	 */
 	public void start(BundleContext bundleContext) throws Exception {
 		Activator.context = bundleContext;
-//		context.registerService(IOperateService.class.getName(), new OperateService(), null);
 	}
 
 	/*

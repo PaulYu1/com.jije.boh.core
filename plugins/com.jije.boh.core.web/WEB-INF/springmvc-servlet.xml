@@ -4,8 +4,8 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd 
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd ">
 
-	<context:annotation-config/>
 	<context:component-scan base-package="com.jije.boh.core.web.controller" />
+	<context:annotation-config/>
 	
 	<!-- configure FreeMarker support -->
 	<bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">

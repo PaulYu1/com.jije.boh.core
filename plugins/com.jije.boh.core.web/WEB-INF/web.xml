@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <web-app>
 
-	<display-name>Test Spring Web App</display-name>
+	<display-name>Spring Web App</display-name>
 
 	<context-param>
 		<param-name>contextClass</param-name>

@@ -3,9 +3,6 @@
  */
 package com.jije.boh.core.web.controller;
 
-import javax.annotation.Resource;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -22,17 +19,14 @@ import org.osgi.framework.ServiceReference;
 @Controller
 public class MainController {
 
-	@Autowired
-	private IOperateService operateService;
-
 	@RequestMapping("/hello")
 	public ModelAndView hello() {
-//		BundleContext context = FrameworkUtil.getBundle(this.getClass())
-//				.getBundleContext();
-//		ServiceReference<?> serviceReference = context
-//				.getServiceReference(IOperateService.class.getName());
-//		IOperateService operateService = (IOperateService) context
-//				.getService(serviceReference);
+		BundleContext context = FrameworkUtil.getBundle(this.getClass())
+				.getBundleContext();
+		ServiceReference<?> serviceReference = context
+				.getServiceReference(IOperateService.class.getName());
+		IOperateService operateService = (IOperateService) context
+				.getService(serviceReference);
 		String str = operateService.getDate();
 		return new ModelAndView("hello", "date", str);
 	}
