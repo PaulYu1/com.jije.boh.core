@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Interface
+Bundle-SymbolicName: com.jije.boh.core.service.interface
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: CLOUD
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: com.jije.boh.core.service.inter
