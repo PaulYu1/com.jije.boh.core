@@ -14,7 +14,7 @@
 		<module>plugins/com.jije.boh.core.database</module>
 		<module>plugins/com.jije.boh.core.jpa</module>
 		<module>plugins/com.jije.boh.core.jpa.test</module>
-		<module>plugins/com.jije.boh.core.persistence</module>
+		<module>plugins/com.jije.boh.core.domain</module>
 		<module>plugins/com.jije.boh.core.service.interface</module>
 		<module>features/com.jije.boh.core.feature</module>
 		<module>features/com.jije.boh.core.feature.source</module>

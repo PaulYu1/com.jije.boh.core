@@ -1,12 +1,12 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Persistence
-Bundle-SymbolicName: com.jije.boh.core.persistence
+Bundle-SymbolicName: com.jije.boh.core.domain
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: com.jije.boh.core.persistence.Activator
+Bundle-Activator: com.jije.boh.core.domain.Activator
 Bundle-Vendor: CLOUD
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: javax.persistence,
  org.osgi.framework;version="1.3.0"
 Bundle-ActivationPolicy: lazy
-Export-Package: com.jije.boh.core.persistence.model
+Export-Package: com.jije.boh.core.domain.model

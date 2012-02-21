@@ -16,4 +16,3 @@ Import-Package: javax.persistence;jpa="2.0",
  org.osgi.util.tracker
 Bundle-Activator: com.jije.boh.core.jpa.Activator
 Bundle-ClassPath: .,com.jije.boh.core.persistence/com.jije.boh.core.persistence.model
-Require-Bundle: spring-data-jpa;bundle-version="1.0.3"

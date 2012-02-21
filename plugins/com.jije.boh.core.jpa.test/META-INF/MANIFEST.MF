@@ -7,7 +7,7 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: com.jije.boh.core.jpa.test.Activator
 Bundle-Vendor: CLOUD
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Import-Package: com.jije.boh.core.persistence.model,
+Import-Package: com.jije.boh.core.domain.model,
  javax.persistence;jpa="2.0",
  javax.persistence.criteria,
  javax.persistence.metamodel,

@@ -1,4 +1,4 @@
-package com.jije.boh.core.persistence;
+package com.jije.boh.core.domain;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;

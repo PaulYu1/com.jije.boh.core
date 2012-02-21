@@ -7,9 +7,9 @@
     <persistence-unit name="AccountsTest" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 
-        <class>com.jije.boh.core.persistence.model.Account</class>
-        <class>com.jije.boh.core.persistence.model.Customer</class>
-        <class>com.jije.boh.core.persistence.model.Transaction</class>
+        <class>com.jije.boh.core.domain.model.Account</class>
+        <class>com.jije.boh.core.domain.model.Customer</class>
+        <class>com.jije.boh.core.domain.model.Transaction</class>
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
 

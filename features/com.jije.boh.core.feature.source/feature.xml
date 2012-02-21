@@ -22,6 +22,6 @@
    <plugin id="com.jije.boh.core.database.source" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
    <plugin id="com.jije.boh.core.service.source" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
    <plugin id="com.jije.boh.core.event.source" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
-   <plugin id="com.jije.boh.core.persistence.source" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="com.jije.boh.core.domain.source" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
    <plugin id="com.jije.boh.core.service.interface.source" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
 </feature>

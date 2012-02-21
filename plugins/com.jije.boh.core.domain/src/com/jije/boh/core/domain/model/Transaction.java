@@ -1,4 +1,4 @@
-package com.jije.boh.core.persistence.model;
+package com.jije.boh.core.domain.model;
 
 import javax.persistence.*;
 
