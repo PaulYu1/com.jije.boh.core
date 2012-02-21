@@ -1,18 +1,17 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Meta-Persistence: META-INF/persistence.xml
-Bundle-Name: Gemini JPA Sample Persistence Unit
+Bundle-Name: Spring Data JPA Persistence Unit
 Bundle-SymbolicName: com.jije.boh.core.jpa
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Import-Package: javax.persistence;jpa="2.0",
- javax.persistence.criteria;jpa="2.0",
- javax.persistence.metamodel;jpa="2.0",
- org.apache.derby.jdbc;version="10.5.1.1",
- org.eclipse.persistence.jpa,
+Import-Package: javax.persistence;version="2.0.3",
+ javax.persistence.criteria;version="2.0.3",
  org.h2;version="1.1.117",
  org.osgi.framework,
- org.osgi.service.jpa,
- org.osgi.util.tracker
+ org.springframework.data.jpa.domain;version="1.0.3.RELEASE",
+ org.springframework.data.jpa.repository;version="1.0.3.RELEASE",
+ org.springframework.data.repository;version="1.1.0.RELEASE",
+ org.springframework.data.repository.core.support;version="1.1.0.RELEASE",
+ org.springframework.orm.jpa;version="3.0.5.RELEASE",
+ org.springframework.orm.jpa.vendor;version="3.0.5.RELEASE"
 Bundle-Activator: com.jije.boh.core.jpa.Activator
-Bundle-ClassPath: .,com.jije.boh.core.persistence/com.jije.boh.core.persistence.model
