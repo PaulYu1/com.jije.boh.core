@@ -12,8 +12,8 @@ import org.eclipse.persistence.config.PersistenceUnitProperties;
 import org.eclipse.gemini.jpa.provider.PersistenceProvider;
 import org.junit.Test;
 
-import com.jije.boh.core.jpa.model.Account;
-import com.jije.boh.core.jpa.model.Customer;
+import com.jije.boh.core.persistence.model.Account;
+import com.jije.boh.core.persistence.model.Customer;
 
 /**
  * JPA sample test, Make sure the database is starting.

@@ -7,18 +7,17 @@
     <persistence-unit name="AccountsTest" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 
-        <class>com.jije.boh.core.jpa.model.Account</class>
-        <class>com.jije.boh.core.jpa.model.Customer</class>
-        <class>com.jije.boh.core.jpa.model.Transaction</class>
+        <class>com.jije.boh.core.persistence.model.Account</class>
+        <class>com.jije.boh.core.persistence.model.Customer</class>
+        <class>com.jije.boh.core.persistence.model.Transaction</class>
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
 
         <properties>
-            <property name="eclipselink.target-database" value="Derby"/>
-            <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/accountDB;create=true"/>
-            <property name="javax.persistence.jdbc.user" value="app"/>
-            <property name="javax.persistence.jdbc.password" value="app"/>
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:~/boh-db/test"/>
+            <property name="javax.persistence.jdbc.user" value="sa"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
 
             <property name="eclipselink.logging.level" value="FINE"/>
             <property name="eclipselink.logging.timestamp" value="false"/>

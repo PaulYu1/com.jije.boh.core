@@ -1,7 +1,9 @@
-package com.jije.boh.core.jpa.model;
+package com.jije.boh.core.persistence.model;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
+
 
 /**
  * JPA Sample class

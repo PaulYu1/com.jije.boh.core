@@ -34,7 +34,7 @@ public class Activator implements BundleActivator, ServiceTrackerCustomizer {
 
     public void stop(BundleContext context) throws Exception {
         emfTracker.close();
-        System.out.println("JPA Sample stopped");
+        System.out.println("JPA stopped");
     }
     
     /*========================*/

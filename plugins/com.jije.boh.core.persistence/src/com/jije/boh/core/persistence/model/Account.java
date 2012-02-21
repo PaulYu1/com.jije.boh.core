@@ -1,6 +1,7 @@
-package com.jije.boh.core.jpa.model;
+package com.jije.boh.core.persistence.model;
 
 import javax.persistence.*;
+
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;

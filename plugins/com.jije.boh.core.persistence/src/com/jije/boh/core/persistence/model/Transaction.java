@@ -1,4 +1,4 @@
-package com.jije.boh.core.jpa.model;
+package com.jije.boh.core.persistence.model;
 
 import javax.persistence.*;
 
