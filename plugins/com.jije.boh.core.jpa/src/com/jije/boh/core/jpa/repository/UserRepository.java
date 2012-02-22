@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
 import com.jije.boh.core.jpa.domain.User;
 
@@ -16,7 +16,7 @@ import com.jije.boh.core.jpa.domain.User;
  * 
  * @author Murphy
  */
-public interface UserRepository extends CrudRepository<User, Long>{
+public interface UserRepository extends PagingAndSortingRepository<User, Long>{
 
     List<User> findByLastname(String lastname);
 

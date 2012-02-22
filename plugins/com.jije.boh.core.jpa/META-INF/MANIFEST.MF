@@ -4,6 +4,7 @@ Bundle-Name: Spring Data JPA Persistence Unit
 Bundle-SymbolicName: com.jije.boh.core.jpa
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ClassPath: .,target/classes,bin
 Import-Package: com.jije.boh.core.service.inter,
  javax.persistence;version="2.0.3",
  javax.persistence.criteria;version="2.0.3",
@@ -14,6 +15,7 @@ Import-Package: com.jije.boh.core.service.inter,
  org.eclipse.persistence.queries;version="2.3.1.v20110908-r10021",
  org.h2;version="1.1.117",
  org.osgi.framework,
+ org.springframework.beans.factory.annotation;version="3.0.5.RELEASE",
  org.springframework.data.jpa.domain;version="1.0.3.RELEASE",
  org.springframework.data.jpa.repository;version="1.0.3.RELEASE",
  org.springframework.data.jpa.repository.support;version="1.0.3.RELEASE",
