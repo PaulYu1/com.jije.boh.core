@@ -8,6 +8,6 @@
 
 	<!-- import the DataSource from OSGi -->
 	<osgi:reference id="dataSource" interface="javax.sql.DataSource" />
-
-	<osgi:service ref="userDao" interface="com.jije.boh.core.service.inter.IOperateJpaDao" />
+	<osgi:service ref="userRepository"
+		interface="org.springframework.data.repository.CrudRepository" />
 </beans>

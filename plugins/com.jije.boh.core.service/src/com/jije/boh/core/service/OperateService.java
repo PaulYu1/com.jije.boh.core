@@ -1,24 +1,35 @@
 package com.jije.boh.core.service;
 
 import java.util.Date;
-
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
 
-import com.jije.boh.core.service.inter.IOperateJpaDao;
 import com.jije.boh.core.service.inter.IOperateService;
 
 @Component("operateService")
 public class OperateService implements IOperateService {
+	private CrudRepository _crudRepository;
 
-	public String getDate() {
+	public CrudRepository getCrudRepository() {
 		BundleContext context = Activator.getContext();
 		ServiceReference<?> serviceReference = context
-				.getServiceReference(IOperateJpaDao.class.getName());
-		IOperateJpaDao dao = (IOperateJpaDao) context
+				.getServiceReference(CrudRepository.class.getName());
+		CrudRepository dao = (CrudRepository) context
 				.getService(serviceReference);
-		dao.getList();
-		return new Date().toString();
+		return dao;
+	}
+
+	OperateService() {
+		this._crudRepository = getCrudRepository();
+	}
+
+	public long getCount() {
+		return _crudRepository.count();
+	}
+
+	public String getDate() {
+		return new Date().toString() + "there are: " + getCount() + " records";
 	}
 }
