@@ -4,9 +4,8 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.criteria.CriteriaQuery;
-
+import com.jije.boh.core.service.inter.IOperateJpaDao;
 import com.jije.boh.core.jpa.domain.User;
-
 
 /**
  * Implementation fo the custom repository functionality declared in
@@ -35,33 +34,39 @@ import com.jije.boh.core.jpa.domain.User;
  * 
  * @author Murphy
  */
-class UserRepositoryImpl implements UserRepositoryCustom {
+class UserRepositoryImpl implements UserRepositoryCustom, IOperateJpaDao {
 
-    @PersistenceContext
-    private EntityManager em;
+	@PersistenceContext
+	private EntityManager em;
 
-    /**
-     * Configure the entity manager to be used.
-     * 
-     * @param em the {@link EntityManager} to set.
-     */
-    public void setEntityManager(EntityManager em) {
+	/**
+	 * Configure the entity manager to be used.
+	 * 
+	 * @param em
+	 *            the {@link EntityManager} to set.
+	 */
+	public void setEntityManager(EntityManager em) {
 
-        this.em = em;
-    }
+		this.em = em;
+	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.springframework.data.jpa.sample.repository.UserRepositoryCustom#
+	 * myCustomBatchOperation()
+	 */
+	public List<User> myCustomBatchOperation() {
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.springframework.data.jpa.sample.repository.UserRepositoryCustom#
-     * myCustomBatchOperation()
-     */
-    public List<User> myCustomBatchOperation() {
+		CriteriaQuery<User> criteriaQuery = em.getCriteriaBuilder()
+				.createQuery(User.class);
 
-        CriteriaQuery<User> criteriaQuery =
-                em.getCriteriaBuilder().createQuery(User.class);
+		return em.createQuery(criteriaQuery).getResultList();
+	}
 
-        return em.createQuery(criteriaQuery).getResultList();
-    }
+	@Override
+	public Object getList() {
+		List<User> list = myCustomBatchOperation();
+		return list;
+	}
 }

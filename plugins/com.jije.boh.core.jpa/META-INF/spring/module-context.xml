@@ -22,5 +22,5 @@
 
 	<jpa:repositories base-package="com.jije.boh.core.jpa.repository" />
 
-	<bean id="userRepository" class="com.jije.boh.core.jpa.repository.UserRepositoryImpl" />
+	<bean id="userDao" class="com.jije.boh.core.jpa.repository.UserRepositoryImpl" />
 </beans>
