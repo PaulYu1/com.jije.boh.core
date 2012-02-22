@@ -14,40 +14,10 @@ import com.jije.boh.core.jpa.domain.User;
  * to the extension of {@link JpaRepository}. Includes custom implemented
  * functionality by extending {@link UserRepositoryCustom}.
  * 
- * @author Oliver Gierke
+ * @author Murphy
  */
-public interface UserRepository extends CrudRepository<User, Long>, UserRepositoryCustom {
+public interface UserRepository extends CrudRepository<User, Long>{
 
-    /**
-     * Find the user with the given username. This method will be translated
-     * into a query using the {@link javax.persistence.NamedQuery} annotation at
-     * the {@link User} class.
-     * 
-     * @param lastname
-     * @return
-     */
-    User findByTheUsersName(String username);
-
-
-    /**
-     * Find all users with the given lastname. This method will be translated
-     * into a query by constructing it directly from the method name as there is
-     * no other query declared.
-     * 
-     * @param lastname
-     * @return
-     */
     List<User> findByLastname(String lastname);
 
-
-    /**
-     * Returns all users with the given firstname. This method will be
-     * translated into a query using the one declared in the {@link Query}
-     * annotation declared one.
-     * 
-     * @param firstname
-     * @return
-     */
-    @Query("select u from User u where u.firstname = ?")
-    List<User> findByFirstname(String firstname);
 }

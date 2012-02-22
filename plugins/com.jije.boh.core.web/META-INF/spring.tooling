@@ -18,3 +18,7 @@ http\://www.springframework.org/schema/lang@name=lang Namespace
 http\://www.springframework.org/schema/lang@prefix=lang
 http\://www.springframework.org/schema/lang@icon=org/springframework/scripting/config/spring-lang.gif
 
+# Tooling related information for the mvc namespace
+http\://www.springframework.org/schema/mvc@name=mvc Namespace
+http\://www.springframework.org/schema/mvc@prefix=mvc
+http\://www.springframework.org/schema/mvc@icon=org/springframework/web/servlet/config/spring-mvc.gif

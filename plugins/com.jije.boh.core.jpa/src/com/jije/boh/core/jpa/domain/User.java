@@ -2,7 +2,6 @@ package com.jije.boh.core.jpa.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.NamedQuery;
 
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
@@ -12,7 +11,6 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
  * @author Murphy
  */
 @Entity
-@NamedQuery(name = "User.findByTheUsersName", query = "from User u where u.username = ?")
 public class User extends AbstractPersistable<Long> {
 
 	private static final long serialVersionUID = -2942735936715107252L;
