@@ -18,6 +18,7 @@
 		<module>plugins/com.jije.boh.core.service.interface</module>
 		<module>features/com.jije.boh.core.feature</module>
 		<module>features/com.jije.boh.core.feature.source</module>
+		<module>features/com.jije.boh.core.test.feature</module>
 		<module>repository</module>
 	</modules>
 	<properties>
