@@ -26,7 +26,7 @@ public class Activator implements BundleActivator {
 		
 		preferences.put(COLOR, "lavender");
 		
-		System.out.println("My favourite color is: " + preferences.get(COLOR, "")); 
+		System.out.println("In event show Preferences my color is: " + preferences.get(COLOR, "")); 
 	}
 	
 	/*

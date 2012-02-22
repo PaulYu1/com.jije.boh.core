@@ -22,5 +22,6 @@ Web-ContextPath: /
 Bundle-ClassPath: .,target/classes
 Require-Bundle: org.springframework.context;bundle-version="3.0.5",
  org.springframework.beans;bundle-version="3.0.5",
- org.springframework.context.support;bundle-version="3.0.5"
+ org.springframework.context.support;bundle-version="3.0.5",
+ org.springframework.web.servlet;bundle-version="3.0.5"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6

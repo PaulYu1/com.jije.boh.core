@@ -8,9 +8,9 @@
 		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="jpaVendorAdapter">
-			<bean class="org.springframework.orm.jpa.vendor.EclipseLinkJpaVendorAdapter">
+			<bean
+				class="org.springframework.orm.jpa.vendor.EclipseLinkJpaVendorAdapter">
 				<property name="generateDdl" value="true" />
-				<property name="database" value="H2" />
 			</bean>
 		</property>
 		<property name="persistenceUnitName" value="Accounts" />
@@ -22,4 +22,5 @@
 
 	<jpa:repositories base-package="com.jije.boh.core.jpa.repository" />
 
+	<bean id="userRepository" class="com.jije.boh.core.jpa.repository.UserRepositoryImpl" />
 </beans>
