@@ -9,5 +9,5 @@
 	<!-- import the DataSource from OSGi -->
 	<osgi:reference id="dataSource" interface="javax.sql.DataSource" />
 
-	<osgi:service ref="userRepository" interface="com.jije.boh.core.jpa.repository.UserRepositoryCustom" />
+	<osgi:service ref="userRepository" interface="com.jije.boh.core.service.inter.IOperateJpaDao" />
 </beans>
