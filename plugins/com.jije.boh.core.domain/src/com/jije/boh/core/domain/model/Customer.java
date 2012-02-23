@@ -18,8 +18,8 @@ public class Customer implements Serializable {
 	private static final long serialVersionUID = 4755540283726931354L;
 
 	@Id
-	@GeneratedValue
-	int id;
+	@GeneratedValue(generator = "system-uuid")
+	String id;
 
 	@Column(name = "LNAME")
 	String lastName;
@@ -46,12 +46,17 @@ public class Customer implements Serializable {
 	}
 
 	/* Getters and setters */
-	public int getId() {
-		return id;
-	}
 
 	public String getLastName() {
 		return lastName;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public void setLastName(String lastName) {

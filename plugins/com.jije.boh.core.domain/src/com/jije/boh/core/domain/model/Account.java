@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  * Sample JPA model class
- * sssssss
+ * 
  * @author Murphy
  */
 @Entity
@@ -21,8 +21,8 @@ public class Account implements Serializable {
 	private static final long serialVersionUID = -3340698550986830624L;
 
 	@Id
-	@GeneratedValue
-	Integer id;
+	@GeneratedValue(generator = "system-uuid")
+	String id;
 
 	double balance;
 
@@ -50,16 +50,17 @@ public class Account implements Serializable {
 	}
 
 	/* Getters and setters */
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
 
 	public double getBalance() {
 		return balance;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public void setBalance(double balance) {
