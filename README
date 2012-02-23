@@ -3,3 +3,4 @@ git remote add --track master nvltechBOH git@github.com:NvltechBOH/com.jije.boh.
 git remote
 git fetch nvltechBOH
 git merge nvltechBOH/master
+git push
