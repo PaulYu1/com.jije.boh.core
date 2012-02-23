@@ -19,7 +19,7 @@ Import-Package: com.jije.boh.core.service.inter,
  org.springframework.web.servlet.view;version="3.0.5.RELEASE",
  org.springframework.web.servlet.view.freemarker;version="3.0.5.RELEASE"
 Web-ContextPath: /
-Bundle-ClassPath: .,target/classes
+Bundle-ClassPath: .,WEB-INF/classes
 Require-Bundle: org.springframework.context;bundle-version="3.0.5",
  org.springframework.beans;bundle-version="3.0.5",
  org.springframework.context.support;bundle-version="3.0.5",

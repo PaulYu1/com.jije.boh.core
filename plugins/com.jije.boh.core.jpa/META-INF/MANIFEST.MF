@@ -4,7 +4,7 @@ Bundle-Name: Spring Data JPA Persistence Unit
 Bundle-SymbolicName: com.jije.boh.core.jpa
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Bundle-ClassPath: .,target/classes,bin
+Bundle-ClassPath: .,bin
 Import-Package: javax.persistence;version="2.0.3",
  javax.persistence.criteria;version="2.0.3",
  javax.persistence.metamodel;version="2.0.3",
