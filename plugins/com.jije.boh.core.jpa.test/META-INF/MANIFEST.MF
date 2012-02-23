@@ -6,6 +6,7 @@ Bundle-SymbolicName: com.jije.boh.core.jpa.test
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: com.jije.boh.core.jpa.test.Activator
 Bundle-Vendor: CLOUD
+Bundle-ClassPath: .,bin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: com.jije.boh.core.domain.model,
  javax.persistence;jpa="2.0",
