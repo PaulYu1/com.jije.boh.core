@@ -28,3 +28,5 @@ Import-Package: javax.persistence;version="2.0.3",
 Bundle-Activator: com.jije.boh.core.jpa.Activator
 Require-Bundle: org.springframework.aop;bundle-version="3.0.5",
  com.springsource.org.aopalliance;bundle-version="1.0.0"
+Export-Package: com.jije.boh.core.jpa.domain,
+ com.jije.boh.core.jpa.repository
