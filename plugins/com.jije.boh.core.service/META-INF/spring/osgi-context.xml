@@ -8,7 +8,7 @@
 
 	<osgi:service interface="com.jije.boh.core.service.inter.IOperateService"
 		ref="operateService" />
+	<osgi:reference interface="com.jije.boh.core.jpa.repository.UserRepository"
+		id="userDao" />
 
-	<osgi:reference id="userDao"
-		interface="com.jije.boh.core.service.inter.IOperateJpaDao" />
 </beans>
