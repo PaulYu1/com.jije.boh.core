@@ -17,7 +17,7 @@ import com.jije.boh.core.domain.model.Transaction;
  * @author Murphy
  */
 @Transactional
-public interface UserRepository extends CrudRepository<Account, Integer> {
+public interface UserRepository extends CrudRepository<Account, String> {
 
 	@Transactional(readOnly = true)
 	List<Transaction> findByTxns(String txns);

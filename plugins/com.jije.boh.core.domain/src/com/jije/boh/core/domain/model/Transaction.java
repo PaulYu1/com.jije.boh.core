@@ -22,8 +22,8 @@ public class Transaction implements Serializable {
 	private static final long serialVersionUID = 1460395723914485001L;
 
 	@Id
-	@GeneratedValue
-	int id;
+	@GeneratedValue(generator = "system-uuid")
+	String id;
 
 	@ManyToOne
 	Account account;
@@ -51,12 +51,17 @@ public class Transaction implements Serializable {
 	}
 
 	/* Getters and setters */
-	public int getId() {
-		return id;
-	}
 
 	public Account getAccount() {
 		return account;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public void setAccount(Account account) {
