@@ -6,7 +6,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.jije.boh.core.jpa.domain.User;
+import com.jije.boh.core.domain.model.Account;
+import com.jije.boh.core.domain.model.Transaction;
 
 /**
  * Repository interface for {@link User} instances. Provides basic CRUD
@@ -16,10 +17,10 @@ import com.jije.boh.core.jpa.domain.User;
  * @author Murphy
  */
 @Transactional
-public interface UserRepository extends CrudRepository<User, Long> {
+public interface UserRepository extends CrudRepository<Account, Integer> {
 
 	@Transactional(readOnly = true)
-	List<User> findByLastname(String lastname);
+	List<Transaction> findByTxns(String txns);
 
 	@Transactional(readOnly = true)
 	long count();

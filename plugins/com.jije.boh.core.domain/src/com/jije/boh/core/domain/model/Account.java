@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  * Sample JPA model class
- * 
+ * sssssss
  * @author Murphy
  */
 @Entity
@@ -22,7 +22,7 @@ public class Account implements Serializable {
 
 	@Id
 	@GeneratedValue
-	int id;
+	Integer id;
 
 	double balance;
 

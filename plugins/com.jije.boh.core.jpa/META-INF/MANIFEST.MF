@@ -5,11 +5,13 @@ Bundle-SymbolicName: com.jije.boh.core.jpa
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ClassPath: .,bin
-Import-Package: javax.persistence;version="2.0.3",
+Import-Package: com.jije.boh.core.domain.model,
+ javax.persistence;version="2.0.3",
  javax.persistence.criteria;version="2.0.3",
  javax.persistence.metamodel;version="2.0.3",
  javax.persistence.spi;version="2.0.3",
  org.eclipse.persistence.expressions;version="2.3.1.v20110908-r10021",
+ org.eclipse.persistence.indirection;version="2.3.1.v20110908-r10021",
  org.eclipse.persistence.jpa;version="2.3.1.v20110908-r10021",
  org.eclipse.persistence.platform.database;version="2.3.1.v20110908-r10021",
  org.eclipse.persistence.queries;version="2.3.1.v20110908-r10021",
@@ -28,5 +30,4 @@ Import-Package: javax.persistence;version="2.0.3",
 Bundle-Activator: com.jije.boh.core.jpa.Activator
 Require-Bundle: org.springframework.aop;bundle-version="3.0.5",
  com.springsource.org.aopalliance;bundle-version="1.0.0"
-Export-Package: com.jije.boh.core.jpa.domain,
- com.jije.boh.core.jpa.repository
+Export-Package: com.jije.boh.core.jpa.repository
