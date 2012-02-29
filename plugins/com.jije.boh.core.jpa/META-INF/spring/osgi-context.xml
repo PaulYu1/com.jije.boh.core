@@ -8,6 +8,19 @@
 
 	<!-- import the DataSource from OSGi -->
 	<osgi:reference id="dataSource" interface="javax.sql.DataSource" />
-	<osgi:service ref="userRepository"
-		interface="com.jije.boh.core.jpa.repository.UserRepository" />
+		
+	<osgi:service ref="bascEmployeeRepository"
+		interface="com.jije.boh.core.jpa.repository.BascEmployeeRepository" />
+		
+	<osgi:service ref="bascStoreRepository"
+		interface="com.jije.boh.core.jpa.repository.BascStoreRepository" />
+		
+	<osgi:service ref="bascJobRepository"
+		interface="com.jije.boh.core.jpa.repository.BascJobRepository" />
+		
+	<osgi:service ref="bascDictionaryRepository"
+		interface="com.jije.boh.core.jpa.repository.BascDictionaryRepository" />
+		
+	<osgi:service ref="bascUserRepository"
+		interface="com.jije.boh.core.jpa.repository.BascUserRepository" />
 </beans>
