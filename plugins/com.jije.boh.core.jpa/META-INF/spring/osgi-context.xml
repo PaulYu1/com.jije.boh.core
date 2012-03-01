@@ -23,4 +23,16 @@
 		
 	<osgi:service ref="bascUserRepository"
 		interface="com.jije.boh.core.jpa.repository.BascUserRepository" />
+		
+	<osgi:service ref="bascDeviceRepository"
+		interface="com.jije.boh.core.jpa.repository.BascDeviceRepository" />
+		
+	<osgi:service ref="bascDeviceStatusRepository"
+		interface="com.jije.boh.core.jpa.repository.BascDeviceStatusRepository" />
+		
+	<osgi:service ref="bascMessageRepository"
+		interface="com.jije.boh.core.jpa.repository.BascMessageRepository" />
+		
+	<osgi:service ref="bascVersionRepository"
+		interface="com.jije.boh.core.jpa.repository.BascVersionRepository" />
 </beans>
