@@ -9,6 +9,15 @@
 		<class>com.jije.boh.core.domain.model.Account</class>
         <class>com.jije.boh.core.domain.model.Customer</class>
         <class>com.jije.boh.core.domain.model.Transaction</class>
+        <class>com.jije.boh.core.domain.model.BascDictionary</class>
+        <class>com.jije.boh.core.domain.model.BascEmployee</class>
+        <class>com.jije.boh.core.domain.model.BascJob</class>
+        <class>com.jije.boh.core.domain.model.BascStore</class>
+        <class>com.jije.boh.core.domain.model.BascUser</class>
+        <class>com.jije.boh.core.domain.model.BascDevice</class>
+        <class>com.jije.boh.core.domain.model.BascDeviceStatus</class>
+        <class>com.jije.boh.core.domain.model.BascMessage</class>
+        <class>com.jije.boh.core.domain.model.BascVersion</class>
 
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 
