@@ -29,131 +29,128 @@ public class BascBase implements Serializable{
 	@Column(length = 32)
 	@GeneratedValue(generator = "system-uuid")
 	//@GenericGenerator(name = "system-uuid", strategy = "uuid")
-	protected String id = UUID.randomUUID().toString().replace("-", "");
+	protected String xid = UUID.randomUUID().toString().replace("-", "");
 	
-	private int status;
+	private int xstatus;
 	
-	private String refnumber;
+	private String xrefnumber;
 	
 	@Version
-	private Long version;
+	private Long xversion;
 	
-	private String plugininfo;
+	private String xplugininfo;
 	
 	@Column(insertable=true,updatable=false)
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date createtime=new Date();
+	private Date xcreatetime=new Date();
 	
-	private String createby;
-	
-	@Temporal(TemporalType.TIMESTAMP)
-	private Date inserttime=new Date();
-	
-	private String insertby;
+	private String xcreateby;
 	
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date lastupdatetime=new Date();
+	private Date xinserttime=new Date();
 	
-	private String lastupdateby;
+	private String xinsertby;
 	
-	private String storeid;
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
-
-	public int getStatus() {
-		return status;
-	}
-
-	public void setStatus(int status) {
-		this.status = status;
-	}
-
-	public String getRefnumber() {
-		return refnumber;
-	}
-
-	public void setRefnumber(String refnumber) {
-		this.refnumber = refnumber;
-	}
-
-	public Long getVersion() {
-		return version;
-	}
-
-	public void setVersion(Long version) {
-		this.version = version;
-	}
-
-	public String getPlugininfo() {
-		return plugininfo;
-	}
-
-	public void setPlugininfo(String plugininfo) {
-		this.plugininfo = plugininfo;
-	}
-
-	public Date getCreatetime() {
-		return createtime;
-	}
-
-	public void setCreatetime(Date createtime) {
-		this.createtime = createtime;
-	}
-
-	public String getCreateby() {
-		return createby;
-	}
-
-	public void setCreateby(String createby) {
-		this.createby = createby;
-	}
-
-	public Date getInserttime() {
-		return inserttime;
-	}
-
-	public void setInserttime(Date inserttime) {
-		this.inserttime = inserttime;
-	}
-
-	public String getInsertby() {
-		return insertby;
-	}
-
-	public void setInsertby(String insertby) {
-		this.insertby = insertby;
-	}
-
-	public Date getLastupdatetime() {
-		return lastupdatetime;
-	}
-
-	public void setLastupdatetime(Date lastupdatetime) {
-		this.lastupdatetime = lastupdatetime;
-	}
-
-	public String getLastupdateby() {
-		return lastupdateby;
-	}
-
-	public void setLastupdateby(String lastupdateby) {
-		this.lastupdateby = lastupdateby;
-	}
-
-	public String getStoreid() {
-		return storeid;
-	}
-
-	public void setStoreid(String storeid) {
-		this.storeid = storeid;
-	}
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date xlastupdatetime=new Date();
 	
+	private String xlastupdateby;
 	
+	private String xstoreid;
 
+	public String getXid() {
+		return xid;
+	}
+
+	public void setXid(String xid) {
+		this.xid = xid;
+	}
+
+	public int getXstatus() {
+		return xstatus;
+	}
+
+	public void setXstatus(int xstatus) {
+		this.xstatus = xstatus;
+	}
+
+	public String getXrefnumber() {
+		return xrefnumber;
+	}
+
+	public void setXrefnumber(String xrefnumber) {
+		this.xrefnumber = xrefnumber;
+	}
+
+	public Long getXversion() {
+		return xversion;
+	}
+
+	public void setXversion(Long xversion) {
+		this.xversion = xversion;
+	}
+
+	public String getXplugininfo() {
+		return xplugininfo;
+	}
+
+	public void setXplugininfo(String xplugininfo) {
+		this.xplugininfo = xplugininfo;
+	}
+
+	public Date getXcreatetime() {
+		return xcreatetime;
+	}
+
+	public void setXcreatetime(Date xcreatetime) {
+		this.xcreatetime = xcreatetime;
+	}
+
+	public String getXcreateby() {
+		return xcreateby;
+	}
+
+	public void setXcreateby(String xcreateby) {
+		this.xcreateby = xcreateby;
+	}
+
+	public Date getXinserttime() {
+		return xinserttime;
+	}
+
+	public void setXinserttime(Date xinserttime) {
+		this.xinserttime = xinserttime;
+	}
+
+	public String getXinsertby() {
+		return xinsertby;
+	}
+
+	public void setXinsertby(String xinsertby) {
+		this.xinsertby = xinsertby;
+	}
+
+	public Date getXlastupdatetime() {
+		return xlastupdatetime;
+	}
+
+	public void setXlastupdatetime(Date xlastupdatetime) {
+		this.xlastupdatetime = xlastupdatetime;
+	}
+
+	public String getXlastupdateby() {
+		return xlastupdateby;
+	}
+
+	public void setXlastupdateby(String xlastupdateby) {
+		this.xlastupdateby = xlastupdateby;
+	}
+
+	public String getXstoreid() {
+		return xstoreid;
+	}
+
+	public void setXstoreid(String xstoreid) {
+		this.xstoreid = xstoreid;
+	}
 }
